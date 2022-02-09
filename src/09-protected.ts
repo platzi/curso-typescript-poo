@@ -1,4 +1,4 @@
-export class Animal {
+export abstract class Animal {
   constructor(protected name: string) {}
 
   move() {
