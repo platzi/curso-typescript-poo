@@ -1,19 +1,22 @@
 import { Dog } from './09-protected';
 
-// function getValue(value: unknown) {
+// function getValue(value: unknown ) {
 //   return value;
 // }
 
-// function getValue(value: string | number) {
+// function getValue(value: string | number ) {
 //   return value;
 // }
 
-function getValue<myType>(value: myType) {
+function getValue<T>(value: T) {
+  const array: T[] = [value];
   return value;
 }
 
-getValue<number>(1212).toFixed();
-getValue<string>('1212').toLowerCase();
-getValue<number[]>([1,1,1]).forEach;
+getValue<number>(12).toFixed();
+getValue<string>('12').toLowerCase();
+getValue<number[]>([11,1,1]).forEach;
 const fifi = new Dog('fifi', 'nico');
 getValue<Dog>(fifi).greeting
+// Promise<boolean>
+// axios.get<string[]>
